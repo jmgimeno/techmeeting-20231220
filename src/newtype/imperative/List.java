@@ -16,6 +16,13 @@ final public class List<E> {
         }
     }
 
+    private List() {
+    }
+
+    public static <E> List<E> make() {
+        return new List<>();
+    }
+
     public static <E> void add(List<E> list, E e) {
         list.head = new Node<>(e, list.head, false);
     }

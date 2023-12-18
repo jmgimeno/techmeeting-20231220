@@ -8,7 +8,7 @@ class ListTest {
 
     @Test
     void rank() {
-        var list = new List<Integer>();
+        var list = List.<Integer>make();
         List.add(list, 1);
         List.addVip(list, 2);
         List.add(list, 3);

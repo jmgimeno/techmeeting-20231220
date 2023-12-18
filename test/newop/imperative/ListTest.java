@@ -11,7 +11,7 @@ class ListTest {
 
     @BeforeEach
     void fillList() {
-        list = new List<Integer>();
+        list = List.make();
         List.add(list, 1);
         List.add(list, 2);
         List.add(list, 3);
